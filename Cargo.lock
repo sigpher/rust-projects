@@ -40,8 +40,6 @@ name = "ch07"
 version = "0.1.0"
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "ch08"
 version = "0.1.0"
 
@@ -62,7 +60,6 @@ name = "ch12"
 version = "0.1.0"
 
 [[package]]
->>>>>>> 498f4aa1388d1f9bf5c2ae758c1043ea1f9f67bf
 name = "getrandom"
 version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"

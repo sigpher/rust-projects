@@ -1,6 +1,6 @@
 use std::{env, process};
 
-use ch12::{Config, run};
+use ch12::{run, Config};
 
 fn main() {
     let args: Vec<String> = env::args().collect();

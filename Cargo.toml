@@ -6,12 +6,9 @@ workspace = { members = [
     "ch05",
     "ch06",
     "ch07",
-<<<<<<< HEAD
-=======
     "ch08",
     "ch09",
     "ch10",
     "ch11",
     "ch12",
->>>>>>> 498f4aa1388d1f9bf5c2ae758c1043ea1f9f67bf
 ] }
