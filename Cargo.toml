@@ -7,4 +7,5 @@ workspace = { members = [
     "ch06",
     "ch07",
     "ch08",
+    "ch09",
 ] }
