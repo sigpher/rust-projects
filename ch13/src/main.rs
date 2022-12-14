@@ -5,8 +5,19 @@ fn main() {
     let simulated_user_specified_value = 100;
     let simulated_random_number = 3;
 
-    generate_workout(simulated_user_specified_value, simulated_random_number);
+    let x = 3;
+    let y = || x + 1;
+    let z = || x - 1;
+    println!("x: {}, y: {}, z: {}", x, y(), z());
 
+    let s1 = String::from("hello");
+    let s2 = || {
+        format!("{} world", s1);
+    };
+    println!("{}",s1);
+    println!("{:?}",s2());
+
+    generate_workout(simulated_user_specified_value, simulated_random_number);
 }
 
 fn simulated_expensive_calculation(intensity: u32) -> u32 {
