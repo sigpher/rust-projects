@@ -1,18 +1,21 @@
-use std::{env, process};
+use std::{env, fs, io, process};
 
-use ch12::{run, Config};
+use ch12::Config;
 
-fn main() {
+fn main() -> Result<(), io::Error> {
     let args: Vec<String> = env::args().collect();
-
-    let config = Config::new(&args).unwrap_or_else(|err| {
-        eprintln!("Problem parsing arguments: {}", err);
-        process::exit(1);
+    let config = Config::new(&args).unwrap_or_else(|error| {
+        println!("Problem parsing arguments: {}", error);
+        process::exit(1)
     });
 
-    if let Err(e) = run(config) {
-        println!("Application error: {}", e);
+    let content = fs::read_to_string(config.filename)?;
 
-        process::exit(1);
+    for line in content.lines() {
+        if line.contains(&config.query) {
+            println!("{}", line)
+        }
     }
+
+    Ok(())
 }
