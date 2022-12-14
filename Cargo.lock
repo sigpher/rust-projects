@@ -64,6 +64,10 @@ name = "ch13"
 version = "0.1.0"
 
 [[package]]
+name = "closure"
+version = "0.1.0"
+
+[[package]]
 name = "getrandom"
 version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -73,6 +77,10 @@ dependencies = [
  "libc",
  "wasi",
 ]
+
+[[package]]
+name = "iterators"
+version = "0.1.0"
 
 [[package]]
 name = "libc"
