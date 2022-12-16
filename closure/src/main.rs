@@ -21,6 +21,17 @@ fn main() {
             Result::Func(index) => println!("{}", index()),
         }
     }
+
+
+    let x = 1;
+    let sum =  |y|x+y;
+    // assert_eq!(3,sum(2));
+    println!("sum(2): {}",sum(2));
+
+
+    let x = vec![1,2,3];
+    fn_once(|z|z==x.len())
+
 }
 // method as argument
 fn calc(method: MethodType, a: i32, b: i32) -> i32 {
@@ -66,4 +77,11 @@ fn login_required(username: &str, password: &str) -> Result {
     } else {
         return Result::Func(index);
     }
+}
+
+
+fn fn_once<F>(func:F)
+where F:FnOnce(usize)->bool,{
+    println!("{}", func(3));
+    // println!("{}", func(4));
 }
