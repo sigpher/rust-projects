@@ -29,6 +29,7 @@ fn iterator_sum() {
     let v1_iter = v1.iter();
     let total: i32 = v1_iter.sum();
     assert_eq!(total, 6);
+    
 }
 
 struct Counter {

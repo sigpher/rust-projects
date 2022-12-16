@@ -4,6 +4,7 @@ fn main() {
     println!("a + b = {}", calc(add, 10, 30));
     println!("a - b = {}", calc(sub, 10, 30));
     println!("a * b = {}", calc(closure_plus, 10, 30));
+  
     println!("------------------------------------");
 
     let (a, b) = (11, 33);
@@ -21,7 +22,6 @@ fn main() {
         }
     }
 }
-
 // method as argument
 fn calc(method: MethodType, a: i32, b: i32) -> i32 {
     method(a, b)
