@@ -14,10 +14,12 @@ workspace = { members = [
     "ch13",
     "ch14",
     "ch15",
+    "ch16",
     "closure",
     "iterators",
     "random",
     "rc",
     "arc",
     "refcell",
+    "mutex",
 ] }
