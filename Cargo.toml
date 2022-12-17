@@ -15,6 +15,7 @@ workspace = { members = [
     "ch14",
     "ch15",
     "ch16",
+    "ch17",
     "closure",
     "iterators",
     "random",
